@@ -31,7 +31,7 @@ function setUserName()
 {
     var myName = prompt("Please enter your cat's name.");
     localStorage.setItem('name:', myName);
-    myHeading.innerHTML = 'Cool ! ' + myName;
+    myHeading.innerHTML = myName;
 }
 
 if(!localStorage.getItem('name')) 
@@ -41,7 +41,7 @@ if(!localStorage.getItem('name'))
 else
 {
     var storedName = localStorage.getItem('name');
-    myHeading.innerHTML = 'Cool ! ' + storedName;
+    myHeading.innerHTML = storedName;
 }
 
 myButton.onclick = function()
